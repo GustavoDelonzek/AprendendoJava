@@ -9,7 +9,7 @@ public class ControleRemoto implements Controlador{
 	//Métodos Especiais
 	public ControleRemoto(){
 		setVolume(50);
-		setLigado(false);
+		setLigado(true);
 		setTocando(false);
 	}
 
@@ -107,6 +107,8 @@ public class ControleRemoto implements Controlador{
 	public void play() {
 		if(this.isLigado() && !(this.isTocando())) {
 			this.setTocando(true);
+		} else {
+			System.out.println("Não consegui reproduzir!");
 		}
 	}
 
@@ -114,6 +116,8 @@ public class ControleRemoto implements Controlador{
 	public void pause() {
 		if(this.isLigado() && this.isTocando()) {
 			this.setTocando(false);
+		}else {
+			System.out.println("Não consegui pausar!");
 		}
 		
 	}
