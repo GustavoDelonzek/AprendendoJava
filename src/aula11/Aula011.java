@@ -10,7 +10,7 @@ public class Aula011 {
 		Bolsista a2 = new Bolsista();
 		a2.setNome("Alfredo");
 		a2.setBolsa(12);
-		a2.setSexo("m");
+		a2.setSexo("M");
 		a2.pagarMensalidade();
 	}
 
